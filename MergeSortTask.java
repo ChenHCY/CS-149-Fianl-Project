@@ -25,18 +25,30 @@ public class MergeSortTask extends RecursiveAction
 		{		
 		int mid = list.length / 2;
 		
-		int [] leftsub = Arrays.copyOfRange(list, 0 ,mid);
-		quickSort(leftsub, 0, mid);
+		//the merge sort part
+		//int [] leftsub = Arrays.copyOfRange(list, 0 ,mid);
+		//mergesort(leftsub);
+		//int [] rightsub = Arrays.copyOfRange(list, mid, list.length);
+		//mergesort(rightsub);
 		
-		int [] rightsub = Arrays.copyOfRange(list, mid , list.length);
-		mergesort(rightsub);
+        //MergeSortTask Ltask = new MergeSortTask (leftsub);	
+		//MergeSortTask Rtask = new MergeSortTask (rightsub);
+		//mergesort(list);
+		//merge(list, leftsub,rightsub);
 		
+		//the quick sort part
+		int [] leftQuick = Arrays.copyOfRange(list, 0 ,mid);
+		int [] rightQuick = Arrays.copyOfRange(list, mid, list.length);
+	
 		
-		MergeSortTask Ltask = new MergeSortTask (leftsub);		
-		MergeSortTask Rtask = new MergeSortTask (rightsub);
+		MergeSortTask quickL = new MergeSortTask (leftQuick);
+		MergeSortTask quickR = new MergeSortTask (rightQuick);
+
+		quickSort(list, 0, list.length-1);
 		
+		return;
 		
-		invokeAll(Ltask,Rtask);
+		//invokeAll(Ltask,Rtask);
 		//mergesort(list);
 		//merge(list, leftsub,rightsub);
 		//return;
