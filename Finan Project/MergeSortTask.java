@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.concurrent.RecursiveAction;
 
 public class MergeSortTask extends RecursiveAction
-{
-private int [] list;
+{ 
+	private int [] list;
 	
 	public MergeSortTask (int[] list)
 	{
@@ -13,13 +13,13 @@ private int [] list;
 	}
 	
 	@Override
-	protected void compute() {
+	protected void compute() 
+	{
 		// TODO Auto-generated method stub
 		int THRESHOLD = 10;
 		if (list.length <= THRESHOLD) 			
 		{ 		
-		mergesort(list);	
-		
+		    bubbleSort(list);	
 		}
 		else
 		{		
@@ -30,8 +30,7 @@ private int [] list;
 		mergesort(leftsub);
 		int [] rightsub = Arrays.copyOfRange(list, mid, list.length);
 		mergesort(rightsub);
-	
-        MergeSortTask Ltask = new MergeSortTask (leftsub);	
+		MergeSortTask Ltask = new MergeSortTask (leftsub);	
 		MergeSortTask Rtask = new MergeSortTask (rightsub);
 		mergesort(list);
 		merge(list, leftsub,rightsub);
@@ -94,6 +93,19 @@ private int [] list;
 		
 	}
 	
+	public static void bubbleSort (int list[])
+	{
+         int n = list.length;
+            for (int i = 0; i < n-1; i++)
+                for (int j = 0; j < n-i-1; j++)
+                    if (list[j] > list[j+1])
+                    {
+
+                        int temp = list[j];
+                        list[j] = list[j+1];
+                        list[j+1] = temp;
+        }
+    }
 	
 	
 }
