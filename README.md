@@ -1,5 +1,5 @@
 # CS-149-Fianl-Project     SJSU  CS149 Final Project Report 
-# Student Name: Chenyu Yang & Eric Van 
+Student Name: Chenyu Yang & Eric Van 
 
 
 This project can be done in teams of three members per team. The project should be submitted as a formal report.
