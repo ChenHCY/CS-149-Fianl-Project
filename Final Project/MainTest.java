@@ -1,3 +1,5 @@
+// This file is for support test Compare the Execution time with different array size in the Merge sort and Quicksort
+
 package FinalProject;
 
 import java.util.Random;
