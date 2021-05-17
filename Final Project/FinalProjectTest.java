@@ -1,3 +1,5 @@
+// This file is for support test the result of merge sort and Quick sort correct of not
+
 package Package;
 
 
@@ -6,11 +8,6 @@ import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
 
 public class FinalProjectTest  {
-
-	
-	
-	
-	
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 				long start = System.currentTimeMillis();
