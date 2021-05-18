@@ -1,4 +1,7 @@
-# CS-149-Fianl-Project     SJSU  CS149 Final Project Report 
+# CS-149-Fianl-Project    SJSU CS-149-05 Operating System Final Project Report
+
+Instructor: Jahan Ghofraniha
+
 Student Name: Chenyu Yang & Eric Van 
 
 
