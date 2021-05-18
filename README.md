@@ -1,4 +1,4 @@
-# CS-149-Fianl-Project    SJSU CS-149-05 Operating System Final Project Report
+# SJSU CS-149-05 Operating System Final Project Report
 
 Instructor: Jahan Ghofraniha
 
